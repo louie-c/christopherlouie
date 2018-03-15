@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,700');
+
+* {
+	box-sizing:border-box;
+}
+
+body {
+	margin: 0;
+	font-family: 'Roboto', sans-serif; 
+	text-align: center; 
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.container {
+	width: 95%
+	max-width: 70em;
+	margin: 0 auto;
+}
+
+.clearfix::after,
+section::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+/* Typography */
+
+h1 {
+	font-size: 2.5rem;
+	margin-bottom: 1.5em;
+}
+
+h1 span {
+	font-weight: 300;
+	display: block;
+	font-size: .9em;
+}
+
+h2 {
+	font-weight: 100;
+	font-size: 2rem;
+	text-align: left;
+}
+
+h3 {
+	font-weight: 300;
+	font-size: 1rem;
+}
+
+a:link {
+	color: #FF0080;
+	font-size: 1.5rem;
+	font-weight: 100;
+	text-transform: uppercase;
+	text-align: left;
+}
+
+@media (min-width: 60rem) {
+	h1 {
+		font-size: 3.7rem;
+	}
+}
+
+/* Buttons */
+
+.button {
+	display: inline-block;
+	font-size: 1.1rem;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: .5em, 1.75em;
+	-webkit-transition: all 0.3s ease-out;
+  	transition: all 0.3s ease-out;
+  	font-weight: 300;
+}
+
+@media (min-width: 60rem) {
+	.button {
+		font-size: 1.5rem;
+	}
+}
+
+.button-big {
+	font-size: 1.5rem;
+	font-weight: 100;
+	text-transform: uppercase;
+}
+
+.button-accent {
+	color: #FFF;
+}
+
+.button-accent:hover,
+.button-accent:focus{
+	background: rgba(0,0,0,0);
+	color: #FF0080;
+}
+
+/* Navigation */
+
+header {
+	position: absolute; 
+	left: 0;
+	right: 0;
+	margin-top: 1em;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+nav li {
+	display: inline-block;
+	margin: 1em;
+}
+
+nav a {
+	font-weight: 100;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: .9rem;
+	padding: .5em;
+	color: #FFF;
+}
+
+nav a:hover,
+nav a:focus {
+	color: #FF0080;
+}
+
+@media (min-width: 60rem) {
+	nav {
+		float: right;
+	}
+}
+
+/* Section 1 Hero*/
+
+.section-1 {
+	background-image: url('Assets/Images/Hero_opt.jpg');
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	padding: 10em 0;
+	color: #FFF;
+}
+
+@media (min-width: 60rem) {
+	.section-1 {
+		height: 100vh;
+		padding-top: 35vh;
+	}
+}
+
+/* Section 2 Selected Work */
+
+.section-2 {
+	margin: 10em, 0;
+}
+
+.work-item {
+	margin: 0;
+	position: relative;
+}
+
+.work-item img {
+	display: block;
+}
+
+.work-desc {
+	position: absolute;
+	z-index: 100;
+	bottom: 0em;
+	left: 0em;
+	right: 0em;
+	padding: 1em;
+	background: rgba(0,0,0,.66);
+	padding: 3em;
+}
+
+@media (min-width: 50rem) {
+	.work-item {
+		width: 50%;
+		float: left;
+		overflow: hidden;
+	}
+
+	.work-desc {
+		transform: translateY(150%);
+	}
+
+	.work-item:hover .work-desc{
+		transform: translateY(0%);
+		-webkit-transition: all 0.5s ease-in-out;
+  		transition: all 0.5s ease-in-out;
+	}
+}
+
+/* Section 3 About */ 
+
+.section-3 {
+	background-color: #232323;
+	padding: 4em;
+	width: 100vw;
+	color: #FFF;
+}
+
+@media (min-width: 25rem) {
+	h2{
+		font-size: 1.3rem;
+	}
+}
+
+@media (min-width: 60rem) {
+	h2{
+		font-size: 2rem;
+	}
+}
+
+
+
+
