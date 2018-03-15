@@ -144,7 +144,7 @@ nav a:focus {
 /* Section 1 Hero*/
 
 .section-1 {
-	background-image: url('Assets/Images/Hero_opt.jpg');
+	background-image: url('Images/Hero_opt.jpg');
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
