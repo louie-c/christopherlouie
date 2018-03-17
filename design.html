@@ -13,6 +13,12 @@
 		<style>
 			@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,700');
 		</style>
+		<!-- Lightbox -->
+		<link rel="stylesheet" type="text/css" href="style.css">
+  		<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+   		<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+  		<link rel="stylesheet" href="Assets/css/lightbox.min.css">
 	</head>
 
 	<body>
@@ -34,21 +40,27 @@
 				</h1>
 			</div>
 		</section>
+	<!-- gallery -->
+	<!-- Gallery -->
+		<div id="wrapper">
+			<section class="one-third">
+				<a class="example-image-link" id="lightbox-img" href="Assets/Design/Boston_Typefaces.jpg" data-lightbox="example-set" data-title="Typography 1 Project"><img class="example-image" src="Assets/Design/Boston_Typefaces.jpg" alt="Boston Typefaces Poster" title="Typography 1 Project"></a>
+			</section>
 
+			<section class="one-third">
+				<a class="example-image-link" id="lightbox-img" href="Assets/Design/JHMI_Poster.jpg" data-lightbox="example-set" data-title="JHMI Poster"><img class="example-image" src="Assets/Design/JHMI_Poster.jpg" alt="JHMI_Poster" title="JHMI Poster"></a>
+			</section>
 
+			<section class="one-third">
+				<a class="example-image-link" id="lightbox-img" href="Assets/Design/ExperienceMap_Poster.jpg" data-lightbox="example-set" data-title="Design Process Project"><img class="example-image" src="Assets/Design/ExperienceMap_Poster.jpg" alt="Experience Map Poster" title="Design Process Project"></a>
+			</section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+			<section class="one-third">
+				<a class="example-image-link" id="lightbox-img" href="Assets/Design/FKH_Logo.jpg" data-lightbox="example-set" data-title="FKH Branding"><img class="example-image" src="Assets/Design/FKH_Logo.jpg" alt="FKH Logo" title="FKH Logo"></a>
+			</section>
+		
+		<!-- End Gallery -->																
+		</div>
+		<script src="Assets/js/lightbox-plus-jquery.min.js"></script>
 	</body>
 </html>
