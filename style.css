@@ -380,9 +380,17 @@ nav a:focus {
 }
 
 .flex-about {
-	background-color: #1077B7;
+	background-color: #f1f1f3;
 	margin: 0;
 	height: auto;
+}
+
+
+.flex-about-img {
+	background-color: #f1f1f3;
+	width: 75vw;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 /* Textbox 1 */ 
@@ -406,7 +414,7 @@ nav a:focus {
 
 /* Text Box 2 */
 .flex-about2 {
-	background-color: #1077B7;
+	background-color: #f1f1f3;
 	margin: 0;
 	height: auto;
 }
@@ -418,7 +426,7 @@ nav a:focus {
 	text-align: left;
 	position: relative;
 	float: right;
-	transform: translateY(33%);
+	transform: translateY(25%);
 }
 
 .flex-about-textbox2 h3 {
@@ -431,7 +439,7 @@ nav a:focus {
 
 /* Text Box 3 */
 .flex-about3 {
-	background-color: #1077B7;
+	background-color: #f1f1f3;
 	margin: 0;
 	height: auto;
 }
@@ -442,7 +450,7 @@ nav a:focus {
 	color: #FFF;
 	text-align: left;
 	position: relative;
-	transform: translateY(33%);
+	transform: translateY(28%);
 }
 
 .flex-about-textbox3 h3 {
@@ -464,5 +472,12 @@ nav a:focus {
 		transform:translateY(0%)
 	}
 }
+
+@media (max-width: 30rem) {
+	.flex-about-img{
+		width: 100vw;
+	}
+}
+
 
 
