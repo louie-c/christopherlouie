@@ -250,9 +250,9 @@ nav a:focus {
 	color: #FFF;
 }
 
-@media (min-width: 25rem) {
+@media (max-width: 25rem) {
 	h2{
-		font-size: 1.3rem;
+		font-size: 1.1rem;
 	}
 }
 
@@ -380,7 +380,7 @@ nav a:focus {
 }
 
 .flex-about {
-	background-color: #FFF;
+	background-color: #1077B7;
 	margin: 0;
 	height: auto;
 }
@@ -406,7 +406,7 @@ nav a:focus {
 
 /* Text Box 2 */
 .flex-about2 {
-	background-color: #FFF;
+	background-color: #58a1ed;
 	margin: 0;
 	height: auto;
 }
@@ -431,7 +431,7 @@ nav a:focus {
 
 /* Text Box 3 */
 .flex-about3 {
-	background-color: #FFF;
+	background-color: #1077B7;
 	margin: 0;
 	height: auto;
 }
