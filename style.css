@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,400,800');
 
 * {
 	box-sizing:border-box;
@@ -45,14 +46,17 @@ section::after {
 /* Typography */
 
 h1 {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 800;
 	font-size: 2.5rem;
 	margin-bottom: 1.5em;
 }
 
 h1 span {
-	font-weight: 300;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 100;
 	display: block;
-	font-size: .9em;
+	font-size: .75em;
 }
 
 h2 {
@@ -67,10 +71,10 @@ h3 {
 }
 
 /* Links */ 
-
 a:link {
+	font-family: 'Raleway', sans-serif;
 	color: #FFF;
-	font-size: 1.5rem;
+	font-size: 1.4rem;
 	font-weight: 100;
 	text-transform: uppercase;
 	text-align: left;
@@ -123,6 +127,7 @@ a:active {
 }
 
 .button-accent {
+
 	color: #FFF;
 }
 
@@ -153,10 +158,11 @@ nav li {
 }
 
 nav a {
+	font-family: 'Raleway', sans-serif;
 	font-weight: 100;
 	text-decoration: none;
 	text-transform: uppercase;
-	font-size: .9rem;
+	font-size: .75rem;
 	padding: .5em;
 	color: #FFF;
 }
@@ -259,11 +265,12 @@ nav a:focus {
 /* Photography/Lightbox Gallery */
 
 .section-photography {
-	background-image: url('Assets/Images/Photography_header.jpg');
+	/*background-image: url('Assets/Images/Photography_header.jpg');*/
+	background-color: #232323;
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
-	padding: 11em 0;
+	padding: 10em 0;
 	color: #FFF;
 
 }
@@ -283,9 +290,9 @@ nav a:focus {
 .example-image:hover {
     filter:none;
     -webkit-filter: grayscale(0%);
-    -moz-transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
+    -moz-transform: scale(1.125);
+    -webkit-transform: scale(1.125);
+    transform: scale(1.125);
 	-webkit-transition: all 0.5s ease-in-out;
   	transition: all 0.5s ease-in-out;
 }
@@ -315,11 +322,12 @@ nav a:focus {
 
 /* Design and Fine Arts */ 
 .section-design {
-	background-image: url('Assets/Images/Design_opt.jpg');
+	/*background-image: url('Assets/Images/Design_opt.jpg');*/
+	background-color: #232323;
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
-	padding: 11em 0;
+	padding: 10em 0;
 	color: #FFF;
 }
 
@@ -330,8 +338,9 @@ nav a:focus {
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
-	padding: 11em 0;
+	padding: 10em 0;
 	color: #FFF;
+	overflow: hidden;
 }
 
 	.lego-man {
@@ -362,20 +371,19 @@ nav a:focus {
 /* Flex */ 
 .flex-hero {
 	background-image: url('Assets/Images/Flex_opt.jpg');
-	background-color: #232323;
+	background-color: #1077B7;
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
-	padding: 11em 0;
+	padding: 10em 0;
 	color: #FFF;
 }
 
 .flex-about {
-	background-color: #232323;
+	background-color: #FFF;
 	margin: 0;
 	height: auto;
 }
-
 
 /* Textbox 1 */ 
 .flex-about-textbox {
@@ -385,6 +393,7 @@ nav a:focus {
 	color: #FFF;
 	text-align: left;
 	position: relative;
+	transform: translateY(33%);
 }
 
 .flex-about-textbox h3 {
@@ -397,7 +406,7 @@ nav a:focus {
 
 /* Text Box 2 */
 .flex-about2 {
-	background-color: #232323;
+	background-color: #FFF;
 	margin: 0;
 	height: auto;
 }
@@ -409,6 +418,7 @@ nav a:focus {
 	text-align: left;
 	position: relative;
 	float: right;
+	transform: translateY(33%);
 }
 
 .flex-about-textbox2 h3 {
@@ -421,7 +431,7 @@ nav a:focus {
 
 /* Text Box 3 */
 .flex-about3 {
-	background-color: #232323;
+	background-color: #FFF;
 	margin: 0;
 	height: auto;
 }
@@ -432,6 +442,7 @@ nav a:focus {
 	color: #FFF;
 	text-align: left;
 	position: relative;
+	transform: translateY(33%);
 }
 
 .flex-about-textbox3 h3 {
@@ -447,3 +458,11 @@ nav a:focus {
 		width: 50%;
 	}
 }
+
+@media (max-width: 30rem) {
+	.flex-about-textbox, .flex-about-textbox2, .flex-about-textbox3{
+		transform:translateY(0%)
+	}
+}
+
+

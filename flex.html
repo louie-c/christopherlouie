@@ -13,6 +13,43 @@
 		<style>
 			@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,700');
 		</style>
+		<!-- Jquery CDN -->
+		<script
+			  src="https://code.jquery.com/jquery-3.3.1.min.js"
+			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			  crossorigin="anonymous">
+		 </script>
+		<!-- Reveal Script -->
+		<script>
+			$( document ).ready(function() {
+			    console.log( "ready!" );
+			// Setting Scroll reveal as a global 
+			object in window
+			window.sr = new ScrollReveal({
+			  reset:true // to repeat the effect
+			});
+			// textbox1
+			sr.reveal("#info1",{
+			  origin:"left",
+			  duration:1200,
+			  distance:"150px"
+			})
+
+			// textbox 2
+			sr.reveal("#info2",{
+			  origin:"right",
+			  duration:1200,
+			  distance:"150px"
+			})
+
+			// textbox 3
+			sr.reveal("#info3",{
+			  origin:"left",
+			  duration:1200,
+			  distance:"150px"
+			})
+		});
+		</script>
 	</head>
 
 	<body>
@@ -35,18 +72,18 @@
 			</div>
 		</section>
 	<!-- "The Problem" -->
-		<div class="container">
+		<div class="container" id="info1">
 			<section class="flex-about">
 				<div class="flex-about-textbox">
 					<h3>The Problem</h3>
 					<br>
-					<p>Keeping track of all my cards can be a hastle. I don't always want to bring my wallet with me if I am going out to an event or concert. All the facilities on campus are tied to my student ID, which makes losing/forgetting it a major issue. Having an all-in-one identification and payment platform was the natural solution.</p>  
+					<p>Keeping track of all my cards can be a hassle. I don't always want to bring my wallet with me if I am going out to an event or concert. All the facilities on campus are tied to my student ID, which makes losing/forgetting it a major issue. Having an all-in-one identification and payment platform was the natural solution.</p>  
 				</div>
 			</section>
 			<img class="flex-about-img" src="Assets/Flex/Flex_Wireframes.jpg" alt="Wireframes">
 		</div> 
 	<!-- "The Pitch" -->
-		<div class="container">
+		<div class="container" id="info2">
 			<section class="flex-about2">
 				<div class="flex-about-textbox2">
 					<h3>The Pitch</h3>
@@ -57,7 +94,7 @@
 			<img class="flex-about-img2" src="Assets/Flex/Flex_Branding.jpg" alt="Branding">
 		</div>
 	<!-- The Process -->
-		<div class="container">
+		<div class="container" id="info3">
 			<section class="flex-about3">
 				<div class="flex-about-textbox3">
 					<h3>The Process</h3>
@@ -69,3 +106,26 @@
 		</div>
 	</body>
 </html>
+
+	<!-- Body Copy -->
+	<!-- 
+	The Problem
+	Keeping track of all my cards can be a hastle. I don't always want to bring my wallet with me if I am going out to an event or concert. All the facilities on campus are tied to my student ID. Which makes losing/forgetting it a major issue. Having an all-in-one identification and payment platform was a natural solution.   
+
+	The Pitch
+	Flex is an all-in-one digital wallet solution that combines mobile pay and mobile identification storage in one platform. Flex uses RFID technology to transfer information efficiently and securely, all from your smartphone or smartwatch.
+
+	The Process
+	The creative process started with a competetive analysis, learning about similar products and detailing the feature sets and success of each. Next I worked on user studies, pin-pointing the target demographic, and interviewing several participants within this demographic. I then applied these "personas" to storyboards, walking through various user flows to identify pain points. 
+
+	The next step in development was wireframing. I created two sets of low fidelity wireframes for both mobile and desktop versions of the site. Using InVision, I linked the wireframes to create an interactive demo. Next came user testing. I tested seven participants and detailed the results, making UI changes based on the feedback. 
+
+	Next came the branding. I did some reserach on color theory and color psychology and ended up with a cool, blue palette. I wanted the app to illicit trust and dependability, and I carried this philosophy forward in the typography and visual design. The natural geomtry afforded by the typeface, "Avenir Next" helped bring life and character to the brand. For the logomark, I utilized a simple typographic mark with a subtly alteration on the "l" to support the symantecs of the name.
+
+	Finally, I created high fidelity, interactive, mockups. I went through several phases of UI and design revision based on further user testing and feedback. The finished product was an interactive prototype. From concept to creation, Project Flex has provided firsthand experience with varying stages of developement that has proved invaluable. 
+
+	Abridged
+
+	The process started with a competetivve analysis. This was followed by user studies, interviews, and storyboards to identify painpoints within user flows. Next was low fidelity wire framing for mobile and desktop. After copious user testing and UI revision, I moved on to branding and visual design. Finally, I created high fidelity interactive mockups and went through several phases of user testing and feedback. From concept to creation, Project Flex provided firsthand experience with varying stages of development in an entrepreneurial setting. 
+	-->
+
