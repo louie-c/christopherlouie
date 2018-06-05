@@ -6,105 +6,110 @@
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="Author" content="Christopher Louie">
-		<title>Photography</title>
+		<title>Christopher Louie</title>
 		<meta name="viewport" content="width=device-wdith, initial-scale-1">
 		<link href="style.css" rel="stylesheet" type="text/css">
 		<!-- Fonts -->
 		<style>
 			@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,700');
+			@import url('https://fonts.googleapis.com/css?family=Raleway:100,400,800');
 		</style>
-		<!-- Lightbox -->
-		<link rel="stylesheet" type="text/css" href="style.css">
-  		<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-   		<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
-    	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
-  		<link rel="stylesheet" href="Assets/css/lightbox.min.css">
+		<!-- Jquery CDN -->
+		<script
+			  src="https://code.jquery.com/jquery-3.3.1.min.js"
+			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			  crossorigin="anonymous">
+		 </script>
+		 <!-- Document ready, Slow Scroll -->
+		<script>
+			$( document ).ready(function() {
+			    console.log( "ready!" );
+			
+			$(document).on('click', 'a[href^="#"]', function (event) {
+			    event.preventDefault();
+
+			    $('html, body').animate({
+			        scrollTop: $($.attr(this, 'href')).offset().top
+			    }, 1000);
+			});
+		});
+		</script>
 	</head>
 
 	<body>
 	<!-- Navigation -->
 		<header>
-			<nav>
+			<nav class="top">
 				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="index.html#Selected-Works">Work</a></li>
-					<li><a href="index.html#About">About</a></li>
+					<li><a href="#Hero">Home</a></li>
+					<li><a href="#Selected-Works">Work</a></li>
+					<li><a href="#About">About</a></li>
 				</ul>
 			</nav>
 		</header>
+
 	<!-- Hero -->
-		<section class="section-photography">
+		<section class="section-1" id="Hero">
 			<div class="container">
-				<h1>
-					Photography 
+				<h1>Christopher Louie
+					<span>Design, UI/UX, Web Development</span>
 				</h1>
+				<a href="#Selected-Works" style="font-size: 1.8rem;">Selected Works</a> 
 			</div>
 		</section>
-	<!-- Gallery -->
-		<div id="wrapper">
-			<section class="one-third">
-				<a class="example-image-link" id="lightbox-img" href="Assets/Photography/JPEG/Photography_01.jpg" data-lightbox="example-set" data-title="Photography Project 1"><img class="example-image" src="Assets/Photography/JPEG/Photography_01.jpg" alt="Park Photograph" title="Photography Project 1"></a>
+
+	<!-- Selected Works -->
+		<section class="section-2">
+			<!-- WiP -->
+			<figure class="work-item" id="Selected-Works">
+				<img src="Assets/Images/PoC_opt.jpg" alt="Project Piece of Cake">
+				<figcaption class="work-desc">
+					<a href="comingsoon.html" class="button button-accent button-big">Project Piece of Cake</a>
+				</figcaption>
+			</figure>
+
+			<!-- Flex -->
+			<figure class="work-item" id="Flex">
+				<img src="Assets/Images/Flex_opt.jpg" alt="Project Flex">
+				<figcaption class="work-desc">
+					<a href="flex.html" class="button button-accent button-big">Project Flex</a>
+				</figcaption>
+			</figure>
+
+			<!-- Photography -->
+			<figure class="work-item">
+				<img src="Assets/Images/Photography_opt.jpg" alt="Photography">
+				<figcaption class="work-desc">
+					<a href="photography.html" class="button button-accent button-big">Photography</a>
+				</figcaption>
+			</figure>
+
+			<!-- Design and Fine Arts -->
+			<figure class="work-item">
+				<img src="Assets/Images/Design_opt.jpg" alt="Design">
+				<figcaption class="work-desc">
+					<a href="design.html" class="button button-accent button-big">Design &amp; Fine Arts</a>
+				</figcaption>
+			</figure>
+		</section>
+
+	<!-- About -->
+			<section class="section-3">
+				<div class="container">
+						<h2>I am an Interaction Design student at Northeastern University with a keen interest in Design, UI/UX, and Web Development. I have a range of experience in various creative disciplines. I am always making something, from writing music to trying new recipes. Feel free to contact me for more information or possible work opportunities!</h2>
+						<!-- <a href="mailto:louie.c@husky.neu.edu.com">Don't be shy!</a> -->
+						<br>
+						<h2>louie.c@husky.neu.edu</h2>
+						<h2>
+						linkedin.com/in/christopherhenrylouie 
+						</h2>
+						<h2> 
+						instagram.com/itschrislouie/
+						</h2>
+						
+						<h2 style="padding-top: 3em;">Created, Designed, and Developed by Christopher Louie &copy; 2018</h2>
+				</div>
 			</section>
-
-			<section class="one-third">
-				<a class="example-image-link" id="lightbox-img" href="Assets/Photography/JPEG/Photography_02.jpg" data-lightbox="example-set" data-title="Photography Project 1"><img class="example-image" src="Assets/Photography/JPEG/Photography_02.jpg" alt="MFA Photograph" title="Photography Project 1"></a>
-			</section>
-
-			<section class="one-third">
-				<a class="example-image-link" id="lightbox-img" href="Assets/Photography/JPEG/Photography_03.jpg" data-lightbox="example-set" data-title="Photography Project 3"><img class="example-image" src="Assets/Photography/JPEG/Photography_03.jpg" alt="Skateboarding 1" title="Photography Project 3"></a>
-			</section>
-
-		
-			<section class="one-third">
-				<a class="example-image-link" id="lightbox-img" href="Assets/Photography/JPEG/Photography_04.jpg" data-lightbox="example-set" data-title="Photography Project 3"><img class="example-image" src="Assets/Photography/JPEG/Photography_04.jpg" alt="Skateboarding 2" title="Photography Project 3"></a>
-			</section> 
-
-			<section class="one-third">
-				<a class="example-image-link" id="lightbox-img" href="Assets/Photography/JPEG/Photography_05.jpg" data-lightbox="example-set" data-title="Photography Project 4"><img class="example-image" src="Assets/Photography/JPEG/Photography_05.jpg" alt="Chinatown Night" title="Photography Project 4"></a>
-			</section>			
-
-			<section class="one-third">
-				<a class="example-image-link" id="lightbox-img" href="Assets/Photography/JPEG/Photography_06.jpg" data-lightbox="example-set" data-title="Photography Project 4"><img class="example-image" src="Assets/Photography/JPEG/Photography_06.jpg" alt="Chinatown Bike" title="Photography Project 4"></a>
-			</section>	
-
-
-			<section class="one-third">
-				<a class="example-image-link" id="lightbox-img" href="Assets/Photography/JPEG/Photography_07.jpg" data-lightbox="example-set" data-title="Photography Project 5"><img class="example-image" src="Assets/Photography/JPEG/Photography_07.jpg" alt="Bus Driver" title="Photography Project 5"></a>
-			</section>
-
-			<section class="one-third">
-				<a class="example-image-link" id="lightbox-img" href="Assets/Photography/JPEG/Photography_08.jpg" data-lightbox="example-set" data-title="Photography Project 5"><img class="example-image" src="Assets/Photography/JPEG/Photography_08.jpg" alt="Smoker" title="Photography Project 5"></a>
-			</section>
-
-			<section class="one-third">
-				<a class="example-image-link" id="lightbox-img" href="Assets/Photography/JPEG/Photography_09.jpg" data-lightbox="example-set" data-title="Photography Project 5"><img class="example-image" src="Assets/Photography/JPEG/Photography_09.jpg" alt="Couple" title="Photography Project 5"></a>
-			</section>
-
-			<section class="one-third">
-				<a class="example-image-link" id="lightbox-img" href="Assets/Photography/JPEG/Photography_10.jpg" data-lightbox="example-set" data-title="Photography Project 5"><img class="example-image" src="Assets/Photography/JPEG/Photography_10.jpg" alt="Old Man" title="Photography Project 5"></a>
-			</section>	
-
-			<section class="one-third">
-				<a class="example-image-link" id="lightbox-img" href="Assets/Photography/JPEG/Photography_11.jpg" data-lightbox="example-set" data-title="Photography Project 5"><img class="example-image" src="Assets/Photography/JPEG/Photography_11.jpg" alt="Lottery" title="Photography Project 5"></a>
-			</section>	
-
-			<section class="one-third">
-				<a class="example-image-link" id="lightbox-img" href="Assets/Photography/JPEG/Photography_12.jpg" data-lightbox="example-set" data-title="Photography Project 2"><img class="example-image" src="Assets/Photography/JPEG/Photography_12.jpg" alt="Turtles" title="Photography Project 2"></a>
-			</section>
-
-			<section class="one-third">
-				<a class="example-image-link" id="lightbox-img" href="Assets/Photography/JPEG/Photography_13.jpg" data-lightbox="example-set" data-title="Photography Project 6"><img class="example-image" src="Assets/Photography/JPEG/Photography_13.jpg" alt="T at Night" title="Photography Project 6"></a>
-			</section>
-
-			<section class="one-third">
-				<a class="example-image-link" id="lightbox-img" href="Assets/Photography/JPEG/Photography_14.jpg" data-lightbox="example-set" data-title="Photography Project 6"><img class="example-image" src="Assets/Photography/JPEG/Photography_14.jpg" alt="Night Road" title="Photography Project 6"></a>
-			</section>
-
-			<section class="one-third">
-				<a class="example-image-link" id="lightbox-img" href="Assets/Photography/JPEG/Photography_15.jpg" data-lightbox="example-set" data-title="Photography Project 5"><img class="example-image" src="Assets/Photography/JPEG/Photography_15.jpg" alt="The Sculpture Room Portrait" title="Photography Project 5"></a>
-			</section>			
-		<!-- End Gallery -->																
-		</div>
-		<script src="Assets/js/lightbox-plus-jquery.min.js"></script>
+		<a id="About"></a>
 	</body>
 </html>
