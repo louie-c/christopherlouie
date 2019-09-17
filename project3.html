@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<html>
+<head>
+<!-- Housekeeping -->
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<meta name="Author" content="Christopher Louie">
+		<title>Design | Christopher Louie</title>
+
+		<link href="style.css" rel="stylesheet" type="text/css">
+<!-- Jquery CDN -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- Bootstrap -->
+	  	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+      	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<!-- Scroll Animation -->
+		<link rel="stylesheet" href="animate.css">
+      	<script src="wow.min.js"></script>
+<!-- Terminal Effect -->
+		<script src="t.min.js"></script>
+<!-- Document ready, Slow Scroll -->
+		<script>
+			$( document ).ready(function() {
+			    console.log( "ready!" );
+			
+			$(document).on('click', 'a[href^="#"]', function (event) {
+			    event.preventDefault();
+
+			    $('html, body').animate({
+			        scrollTop: $($.attr(this, 'href')).offset().top
+			    }, 1000);
+			});
+		});
+		</script>
+<!-- Fonts -->
+		<link rel="stylesheet" href="https://use.typekit.net/eya6sfs.css">	
+<!-- Lightbox -->
+		<link href ="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" rel = "stylesheet" crossorigin="anonymous">
+    	<script src = "https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<div class="wrapper">
+
+<!-- Navigation -->
+            <nav>
+                  <span id="brand">
+                        <a href="index.html">christopherlouie</a>
+                  </span>
+
+                  <ul id="menu">
+                        <li><a href="index.html">home<span>.</span></a></li>
+                        <li><a href="work.html">work<span>.</span></a></li>
+                        <li><a href="#contact">contact<span>.</span></a></li>
+                  </ul>
+
+                  <div id="toggle">
+                        <div class="span">menu</div>
+                  </div>
+
+            </nav>
+
+            <div id="resize">
+                  <div class="close-btn">close</div>
+
+                  <ul id="menu">
+                        <li><a href="index.html">home<span>.</span></a></li>
+                        <li><a href="work.html">work<span>.</span></a></li>
+                        <li><a href="#contact">contact<span>.</span></a></li>
+                  </ul>
+            </div>
+
+
+            <div class="whitespace"></div>
+
+<!-- Hero --> 
+        <div class="container">
+                  <div class="hero-content">
+                        <br><br>
+                        <div class="row">
+                              <div class="col-lg-12">
+                                    <br>
+
+                                    <h1 class="wow fadeInUp" data-wow-delay="1s">Misc. Design.</h1><br><br>
+
+                                    <div class="row">
+                                          <div class="col-lg-4">
+                                                <p class="wow fadeInUp" data-wow-delay="1.2s">Role :</p>
+                                                <h6 class="wow fadeInUp" data-wow-delay="1.3s">Visual Design. Information Design.</h6>
+                                          </div>
+
+                                          <div class="col-lg-4">
+                                                <p class="wow fadeInUp" data-wow-delay="1.4s">started :</p>
+                                                <h6 class="wow fadeInUp" data-wow-delay="1.5s">Fall 2015.</h6>
+                                          </div>
+
+                                          <div class="col-lg-4">
+                                                <p class="wow fadeInUp" data-wow-delay="1.6s">completed :</p>
+                                                <h6 class="wow fadeInUp" data-wow-delay="1.7s">Spring 2019.</h6>
+                                          </div>
+                                    </div>
+                                    <br>
+                                    <p class="wow fadeInUp" data-wow-delay="1.8s">A collection of various print and digital design work I have done in recent years. Projects range from exploratory classwork to professional work done through my co-ops as a full-time designer. Each piece has varying levels of restrictions, allowing me to demonstrate my prowess with typography, balance, hierarchy, color, etc., as well as explore my own interests and style.
+                                    <br>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+            <br>
+
+<!-- Images -->
+
+<div class="container">
+	<div class="row">
+		<a id="lightbox-image" href="images/am_1.jpg" data-toggle="lightbox" data-title="Typography 2 Poster" data-gallery="gallery" class="col-md-4">
+		<img class="wow fadeInUp" data-wow-delay=".2s" src="images/am_1.jpg">
+		</a>
+
+		<a id="lightbox-image" href="images/am_2.jpg" data-toggle="lightbox" data-title="Typography 2 Poster" data-gallery="gallery" class="col-md-4">
+      	<img class="wow fadeInUp" data-wow-delay=".4s" src="images/am_2.jpg">
+    	</a>
+
+    	<a id="lightbox-image" href="images/am_3.jpg" data-toggle="lightbox" data-title="Typography 2 Poster" data-gallery="gallery" class="col-md-4">
+     	<img class="wow fadeInUp" data-wow-delay=".6s" src="images/am_3.jpg">
+    	</a>
+  	</div>
+
+  	<div class="row">
+		<a id="lightbox-image" href="images/rmcm_cover_1.jpg" data-toggle="lightbox" data-title="RMCM Mock Album Cover" data-gallery="gallery" class="col-md-4">
+		<img class="wow fadeInUp" data-wow-delay=".2s" src="images/rmcm_cover_1.jpg">
+		</a>
+
+		<a id="lightbox-image" href="images/rmcm_cover_2.jpg" data-toggle="lightbox" data-title="Solstice Mock Album Cover" data-gallery="gallery" class="col-md-4">
+      	<img class="wow fadeInUp" data-wow-delay=".4s" src="images/rmcm_cover_2.jpg">
+    	</a>
+
+    	<a id="lightbox-image" href="images/rmcm_cover_3.jpg" data-toggle="lightbox" data-title="Jetlag Mock Single Cover" data-gallery="gallery" class="col-md-4">
+     	<img class="wow fadeInUp" data-wow-delay=".6s" src="images/rmcm_cover_3.jpg">
+    	</a>
+  	</div>
+
+  	<div class="row">
+
+  		<a id="lightbox-image" href="images/jhmi_poster.jpg" data-toggle="lightbox" data-title="JHMI Event Poster" data-gallery="gallery" class="col-md-4">
+      	<img class="wow fadeInUp" data-wow-delay=".4s" src="images/jhmi_poster.jpg">
+    	</a>
+
+  	    <a id="lightbox-image" href="images/typefaces.jpg" data-toggle="lightbox" data-title="Typography 1 Poster" data-gallery="gallery" class="col-md-4">
+      	<img class="wow fadeInUp" data-wow-delay=".2s" src="images/typefaces.jpg">
+    	</a>
+
+    	<a id="lightbox-image" href="images/portugal.jpg" data-toggle="lightbox" data-title="Information Design Poster" data-gallery="gallery" class="col-md-4">
+      	<img class="wow fadeInUp" data-wow-delay=".6s" src="images/portugal.jpg">
+    	</a>
+  	</div>
+</div>
+          
+<br>
+<!-- Project Nav -->
+            <div class="project-nav">
+                  <div class="container">
+                        <div class="row">
+                              <div class="col-lg-6 prev">
+                                    <a href="project2.html"><p><ion-icon name="arrow-back"></ion-icon> previous</p></a>
+                              </div>
+                              <div class="col-lg-6 next">
+                                    <a href="project1.html"><p>next <ion-icon name="arrow-forward"></ion-icon></p></a>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+
+            <div class="whitespace"></div>
+
+<!-- Footer -->
+		<div class="container">
+			<br>
+			<hr id="style1" class="wow fadeInUp" data-wow-delay=".2s">
+			<br>
+		</div>
+
+			<div class="footer">
+
+				<div class="container">
+
+					<div class="hr>">
+						<div class="row"></div>
+					</div>
+
+					
+
+					<div class="info">
+						<div class="row">
+							<div class="col-lg-4" id="personal">
+								<p class="wow fadeInUp" data-wow-delay="0s">connect with me</p>
+								<h4 class="wow fadeInUp" data-wow-delay=".2s"><a href="https://www.linkedin.com/in/christopherhenrylouie/" target="_blank">linkedin.com/in/christopherhenrylouie</a></h4>
+							</div>
+
+							<div class="col-lg-4" id="media">
+								<p class="wow fadeInUp" data-wow-delay="0s">follow me</p>
+
+								<ul>
+									<li id="ig" class="wow fadeInUp" data-wow-delay=".4s"><a href="https://www.instagram.com/itschrislouie/" target="_blank">ig</a></li>
+								</ul>
+
+								<br><br>
+							</div>
+
+							<div class="col-lg-4" id="address">
+								<p class="wow fadeInUp" data-wow-delay="0s">say hello</p>
+								<h4 class="wow fadeInUp" data-wow-delay=".6s">louie.c@husky.neu.edu</h4>
+								<br><br>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<a id="contact"></a>
+			<br><br>
+		</div>
+</div>
+
+<!-- greensock cdn -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+
+	     <!-- <script src="https://code.jquery.com/jquery-3.4.1.js"></script> -->
+		      <script type="text/javascript">
+
+			      // navigation starts here
+			      $("#toggle").click(function() {
+			            $(this).toggleClass('on');
+			            $("#resize").toggleClass("active");
+			      });
+			      $("#resize ul li a").click(function() {
+			            $(this).toggleClass('on');
+			            $("#resize").toggleClass("active");
+			      });
+			      $(".close-btn").click(function() {
+			            $(this).toggleClass('on');
+			            $("#resize").toggleClass("active");
+			      });
+
+			      // nav animation
+			      TweenMax.from("#brand", 1, {
+			            delay: 0.4,
+			            y: 10,
+			            opacity: 0,
+			            ease: Expo.easeInOut
+			      })
+			      TweenMax.staggerFrom("#menu li a", 1, {
+			            delay: 0.4,
+			            opacity: 0,
+			            ease: Expo.easeInOut
+			      }, 0.1);
+
+			      new WOW().init();
+	      	</script>
+
+<!-- Ion Icons CDN -->      	
+	<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>	
+
+<!-- Lightbox -->
+	<script>
+		$(document).on("click", '[data-toggle="lightbox"]', function(event) {
+		event.preventDefault();
+		$(this).ekkoLightbox();
+		});    
+	</script>
+
+</body>
+</html>

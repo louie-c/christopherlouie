@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<html>
+<head>
+<!-- Housekeeping -->
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<meta name="Author" content="Christopher Louie">
+		<title>Kaleidosaur | Christopher Louie</title>
+
+		<link href="style.css" rel="stylesheet" type="text/css">
+<!-- Jquery CDN -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- Bootstrap -->
+	  	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+      	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<!-- Scroll Animation -->
+		<link rel="stylesheet" href="animate.css">
+      	<script src="wow.min.js"></script>
+<!-- Terminal Effect -->
+		<script src="t.min.js"></script>
+<!-- Document ready, Slow Scroll -->
+		<script>
+			$( document ).ready(function() {
+			    console.log( "ready!" );
+			
+			$(document).on('click', 'a[href^="#"]', function (event) {
+			    event.preventDefault();
+
+			    $('html, body').animate({
+			        scrollTop: $($.attr(this, 'href')).offset().top
+			    }, 1000);
+			});
+		});
+		</script>
+<!-- Fonts -->
+		<link rel="stylesheet" href="https://use.typekit.net/eya6sfs.css">	
+<!-- Lightbox -->
+		<link href ="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" rel = "stylesheet" crossorigin="anonymous">
+    	<script src = "https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<div class="wrapper">
+
+<!-- Navigation -->
+            <nav>
+                  <span id="brand">
+                        <a href="index.html">christopherlouie</a>
+                  </span>
+
+                  <ul id="menu">
+                        <li><a href="index.html">home<span>.</span></a></li>
+                        <li><a href="work.html">work<span>.</span></a></li>
+                        <li><a href="#contact">contact<span>.</span></a></li>
+                  </ul>
+
+                  <div id="toggle">
+                        <div class="span">menu</div>
+                  </div>
+
+            </nav>
+
+            <div id="resize">
+                  <div class="close-btn">close</div>
+
+                  <ul id="menu">
+                        <li><a href="index.html">home<span>.</span></a></li>
+                        <li><a href="work.html">work<span>.</span></a></li>
+                        <li><a href="#contact">contact<span>.</span></a></li>
+                  </ul>
+            </div>
+
+
+            <div class="whitespace"></div>
+
+<!-- Hero --> 
+        <div class="container">
+                  <div class="hero-content">
+                        <br><br>
+                        <div class="row">
+                              <div class="col-lg-12">
+                                    <br>
+
+                                    <h1 class="wow fadeInUp" data-wow-delay="1s">Kaleidosaur.</h1><br><br>
+
+                                    <div class="row">
+                                          <div class="col-lg-4">
+                                                <p class="wow fadeInUp" data-wow-delay="1.2s">Role :</p>
+                                                <h6 class="wow fadeInUp" data-wow-delay="1.3s">Creative Team Lead. UI/UX. Product Design.</h6>
+                                          </div>
+
+                                          <div class="col-lg-4">
+                                                <p class="wow fadeInUp" data-wow-delay="1.4s">started :</p>
+                                                <h6 class="wow fadeInUp" data-wow-delay="1.5s">Sept 2018.</h6>
+                                          </div>
+
+                                          <div class="col-lg-4">
+                                                <p class="wow fadeInUp" data-wow-delay="1.6s">completed :</p>
+                                                <h6 class="wow fadeInUp" data-wow-delay="1.7s">May 2019.</h6>
+                                          </div>
+                                    </div>
+                                    <br>
+                                    <p class="wow fadeInUp" data-wow-delay="1.8s">
+                                    Kaleidosaur is a web based, open-source, abstract art generator, combining cutting edge machine learning and generative design. Through countless hours of research and development, my capstone team (Michael Rascati, Kevin Altschuler) worked to bring this project to life. I took on the role of creative director for this project, responsible not only for the visual design, but the infrastructure and direction of the application.</p>
+
+                                    <br><br>
+
+                                    <p class="wow fadeInUp" data-wow-delay="1.9s">The goal of our project is to create a web application which allows users to explore a computer’s capacity to create abstract visual representations of real-world objects. By utilizing this format, we have the freedom to educate and inform others of what is possible with the technology, and further inspire explorations into the field. From a user standpoint, building an intuitive interface and compelling project ensures that users will be able to enjoy the creative output as well as the process of generating abstract art.
+                                    </p>
+                                    <br><br>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                              <div class="col-sm-6">
+                                    <div href="images/neuralnet_rec.png" id="small-project" data-toggle="lightbox" data-gallery="gallery" data-title="Tom White, Image Recognition" class="wow fadeInUp" data-wow-delay="0.4s"><img src="images/neuralnet_rec.png" title="Tom White, Image Recognition"></div>
+                              </div>
+
+                              <div class="col-sm-3">
+                                    <div href="images/starry_night_opt.gif" id="small-project" data-toggle="lightbox" data-gallery="gallery" data-title="Chris Cummins, Genetic Algorithm" class="wow fadeInUp" data-wow-delay="0.6s"><img style="width: 97%;" src="images/starry_night_opt.gif" title="Chris Cummins, Genetic Agorithm"></div>
+                              </div>
+
+                              <div class="col-sm-3">
+                                    <div href="images/cello.jpg" id="small-project" data-toggle="lightbox" data-gallery="gallery" data-title="Tom White, Percetion Engine Cello" class="wow fadeInUp" data-wow-delay="0.8s"><img style="width: 97%;" src="images/cello.jpg" title="Tom White, Perception Engine Cello"></div>
+                              </div>                      
+                        </div> 
+                        <br><br>
+                        <div class="row">
+                        	<div class="col-sm-6">
+                                    <p class="wow fadeInUp" data-wow-delay=".2s">Building off the inspirational works of Chris Cummins' Generative Art and Tom White's "Perception Engine", Kaleidosaur works by taking an input tag, and slowly recreating the internal representation of this tag based on a massive image library (Imagenet).</p>
+
+                                    <br><br>
+
+                                    <p class="wow fadeInUp" data-wow-delay=".4s">Take the tag, "dog", for instance. Referencing Imagenet for the label "dog", Kaleidosaur generates a random seed of polygons tailored to the user input. Parameters like population size, opacity, number of polygons, number of vertices, etc. are user controlled.Using a genetic algorithm, Kaleidosaur will continue to mutate and essentially "breed" new seeds of polygons from the fittest of each generation, checking the image against the references, slowly getting closer towards the end goal of "dog".</p> 
+
+                                    <br><br>
+                                    <p class="wow fadeInUp" data-wow-delay=".6s">In essence we are creating an abstract image, the "Platonic Ideal", of an "entity" through the lens of a database. It raises many interesting questions. What makes a dog a "dog" through the lens of a computer? Is it the four legs? The fur? Or something tangential found in many dog photos, like grass? What humans understand as <em>important</em> to create a mental model might not align with a computer's model.</p>
+                            </div>
+                            <br>
+
+                            <div class="col-sm-1">
+                            </div>
+
+                           	<div class="col-sm-4">
+                                    <div class="wow fadeInUp" data-wow-delay="0.8s"><img style="width: 100%;" src="images/k_chart1.png" title="Kaleidosaur Diagram"></div>
+                            </div> 
+
+                            <div class="col-sm-1">
+                            </div>
+
+                        </div>
+            </div>
+    </div>
+    <br>
+
+<!-- Body -->
+            <div class="container">
+            	<br>
+				<hr id="style1" class="wow fadeInUp" data-wow-delay=".2s">
+				<br><br><br>
+                        
+                        <div class="row">
+                              <div class="col-sm-12">
+                                    <div href="images/k_mobile.png" id="small-project" data-toggle="lightbox" data-gallery="gallery" data-title="Mobile Mockups" class="wow fadeInUp" data-wow-delay="0.4s"><img src="images/k_mobile.png" title="Mobile Mockups"></div>
+                              </div>                    
+                        </div>
+                        <br><br>
+                        <div class="row">
+                        	<div class="col-sm-12">
+                        		<p class="wow fadeInUp" data-wow-delay=".2s">Though the project has gone through several iterations of design, our core philosophy of what the project should be remained constant. A simple and intuitive interface that allowed users to easily navigate the web app and all its functionality, and a visual design that reflected the type of abstract art we are trying to create. The front end of the project was built upon a solid foundation of research, ethnography, user testing, and competitive analysis. </p>
+                        	</div>
+                        </div>                             
+
+        		<br>
+                    <div class="row">
+                        <div class="col-lg-6">
+							<div>
+                                <p class="wow fadeInUp" data-wow-delay=".2s">
+                                We started with a series of wireframes that went through the various workflows. A one page layout that allowed the user to immediately jump in to the abstract art generator. This layout also allowed the user to learn about the project while the generator was running, a feature that was important from a technical perspective as we were unsure how long the process would take. Users are able to start creating their art and while the generator works, read about our research, and explore art in the gallery.</p>
+                                <br><br>
+								<p class="wow fadeInUp" data-wow-delay=".4s">Next we began working on low-mid fidelity mockups. These were more of a template format, playing with color and type to start filling out our visual design. After a several iterations (when we had a better idea of what our generated artwork would look like), we began playing with a visual philosophy that can best be described as “brutalist”. We wanted to create something that was funky, defied traditional design principles, reflected the exploratory and abstract nature of our art, yet remained simple and easy to use for the user. Making use of bold, heavy, extended fonts, bright colors, and large imposing shapes, we began shaping the front-end. It was imperative that the design was kinetic.</p>
+								<br><br>
+								<p class="wow fadeInUp" data-wow-delay=".6s">Though our project wasn’t designed specifically for mobile use, we adapted the site to be workable on mobile devices. The mobile design had the benefit of several iterations worth of web content to work from, and the mockup process was fairly simple. The mobile mockups went through two phases of mockups and testing, with the majority of changes revolving around the primary workflow.</p>
+								<br><br>
+								<p class="wow fadeInUp" data-wow-delay=".8s">The final high fidelity mockups make use of these design principles that we tested, with a fair amount of refinement. Making use of interactive backgrounds, scrolling text animations, adaptive color themes, and a unique visual design. The animations are all interactive in some way, though refined to a point where they are not obtrusive to the user. The size of the site affords us limited nav functionality, though users still will be able to navigate to each of the sections with ease. Though working in such a tricky design space proved challenging, it has been a fulfilling process, and the final project speaks for itself.
+								</p>
+							</div>
+						</div>
+
+						<div class="col-lg-4">
+                        		<div href="images/k_hf.png" id="small-project" data-toggle="lightbox" data-gallery="gallery" data-title="High Fidelity Mockups" class="wow fadeInUp" data-wow-delay="0.2s"><img style="width: 90%, margin-left:24px;" src="images/k_hf.png" title="High Fidelity Mockups"></div>
+
+                        		<div href="images/k_demo_opt.gif" id="small-project" data-toggle="lightbox" data-gallery="gallery" data-title="Widget Demo" class="wow fadeInUp" data-wow-delay=".4s"><img style="width: 100%;" src="images/k_demo_opt.gif" title="Widget Demo"></div>
+
+                        </div>
+
+                        <div class="col-lg-2">
+                        		<div href="images/k_wire.png" id="small-project" data-toggle="lightbox" data-gallery="gallery" data-title="Early Wireframe Prototype" class="wow fadeInUp" data-wow-delay="0.4s"><img style="width: 99%;" src="images/k_wire.png" title="Early Wireframe Prototype"></div>
+
+                        		<div href="images/k_lf.png" id="small-project" data-toggle="lightbox" data-gallery="gallery" data-title="Low Fidelity Mockup" class="wow fadeInUp" data-wow-delay="0.6s"><img style="width: 99%;" src="images/k_lf.png" title="Low Fidelity Mockup"></div>
+
+                        		<div href="images/k_mf.png" id="small-project" data-toggle="lightbox" data-gallery="gallery" data-title="Mid Fidelty Mockup" class="wow fadeInUp" data-wow-delay="0.8s"><img style="width: 99%;" src="images/k_mf.png" title="Mid Fidelity Mockup"></div>
+                        </div>              
+                    </div>
+                    <br><br>
+                    <div class="row">
+                    	<div class="col-lg-4">
+                    		<div href="images/whale_opt.png" id="small-project" data-toggle="lightbox" data-gallery="gallery" data-title="Kaleidosaur Whale" class="wow fadeInUp" data-wow-delay="0.4s"><img src="images/whale_opt.png" title="Whale"></div>							
+						</div>
+
+						<div class="col-lg-4">
+                    		<div href="images/ocean_opt.png" id="small-project" data-toggle="lightbox" data-gallery="gallery" data-title="Kaleidosaur Ocean" class="wow fadeInUp" data-wow-delay="0.6s"><img src="images/ocean_opt.png" title="Ocean"></div>							
+						</div>
+
+						<div class="col-lg-4">
+                    		<div href="images/strawberry_opt.png" id="small-project" data-toggle="lightbox" data-gallery="gallery" data-title="Kaleidosaur Strawberry" class="wow fadeInUp" data-wow-delay="0.8s"><img src="images/strawberry_opt.png" title="Strawberry"></div>							
+						</div>
+					</div> 	
+					<br>
+					<div class="row">
+						<div class="col-lg-12"> 
+                        	    <p class="wow fadeInUp" data-wow-delay="1s">Unfortunately due to limited funding and time, Kaleidosaur had to be disconnected from the Google Cloud Computing services and is no longer functional. However, the work can be found on GitHub <a href="https://github.com/yungsluggers/capstone" target="_blank">here.</a> Given the time and resources, I would love to return to this project one day to fully flesh out the rendering module and all of its capabilities! 
+								</p>
+                        </div> 	 
+                    </div>  
+                    <br><br>           
+        </div>
+
+<!-- Project Nav -->
+            <div class="project-nav">
+                  <div class="container">
+                        <div class="row">
+                              <div class="col-lg-6 prev">
+                                    <a href="work.html"><p><ion-icon name="arrow-back"></ion-icon> previous</p></a>
+                              </div>
+                              <div class="col-lg-6 next">
+                                    <a href="project2.html"><p>next <ion-icon name="arrow-forward"></ion-icon></p></a>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+
+            <div class="whitespace"></div>
+
+<!-- Footer -->
+		<div class="container">
+			<br>
+			<hr id="style1" class="wow fadeInUp" data-wow-delay=".2s">
+			<br>
+		</div>
+
+			<div class="footer">
+
+				<div class="container">
+
+					<div class="hr>">
+						<div class="row"></div>
+					</div>
+
+					
+
+					<div class="info">
+						<div class="row">
+							<div class="col-lg-4" id="personal">
+								<p class="wow fadeInUp" data-wow-delay="0s">connect with me</p>
+								<h4 class="wow fadeInUp" data-wow-delay=".2s"><a href="https://www.linkedin.com/in/christopherhenrylouie/" target="_blank">linkedin.com/in/christopherhenrylouie</a></h4>
+							</div>
+
+							<div class="col-lg-4" id="media">
+								<p class="wow fadeInUp" data-wow-delay="0s">follow me</p>
+
+								<ul>
+									<li id="ig" class="wow fadeInUp" data-wow-delay=".4s"><a href="https://www.instagram.com/itschrislouie/" target="_blank">ig</a></li>
+								</ul>
+
+								<br><br>
+							</div>
+
+							<div class="col-lg-4" id="address">
+								<p class="wow fadeInUp" data-wow-delay="0s">say hello</p>
+								<h4 class="wow fadeInUp" data-wow-delay=".6s">louie.c@husky.neu.edu</h4>
+								<br><br>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<a id="contact"></a>
+			<br><br>
+		</div>
+
+</div>
+
+<!-- greensock cdn -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+
+	      <!--<script src="https://code.jquery.com/jquery-3.4.1.js"></script>-->
+		      <script type="text/javascript">
+
+			      // navigation starts here
+			      $("#toggle").click(function() {
+			            $(this).toggleClass('on');
+			            $("#resize").toggleClass("active");
+			      });
+			      $("#resize ul li a").click(function() {
+			            $(this).toggleClass('on');
+			            $("#resize").toggleClass("active");
+			      });
+			      $(".close-btn").click(function() {
+			            $(this).toggleClass('on');
+			            $("#resize").toggleClass("active");
+			      });
+
+			      // nav animation
+			      TweenMax.from("#brand", 1, {
+			            delay: 0.4,
+			            y: 10,
+			            opacity: 0,
+			            ease: Expo.easeInOut
+			      })
+			      TweenMax.staggerFrom("#menu li a", 1, {
+			            delay: 0.4,
+			            opacity: 0,
+			            ease: Expo.easeInOut
+			      }, 0.1);
+
+			      new WOW().init();
+	      	</script>
+<!-- Ion Icons CDN -->      	
+	<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+<!-- Lightbox -->
+	<script>
+		$(document).on("click", '[data-toggle="lightbox"]', function(event) {
+		event.preventDefault();
+		$(this).ekkoLightbox();
+		});    
+	</script>	      	
+</body>
+</html>
