@@ -386,7 +386,7 @@ h6 {
 }
 
 .project1 {
-      background: url('Images/kaleidosaur_hero_opt.jpg') no-repeat 50% 50%;
+      background: url('images/kaleidosaur_hero_opt.jpg') no-repeat 50% 50%;
       background-size: cover;
       -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   	  filter: grayscale(100%);
@@ -416,7 +416,7 @@ h6 {
 }
 
 .project2 {
-      background: url('Images/flex_hero_opt.jpg') no-repeat 50% 50%;
+      background: url('images/flex_hero_opt.jpg') no-repeat 50% 50%;
       background-size: cover;
       -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   	  filter: grayscale(100%);
@@ -445,7 +445,7 @@ h6 {
 }
 
 .project3 {
-      background: url('Images/design_hero_opt.jpg') no-repeat 50% 50%;
+      background: url('images/design_hero_opt.jpg') no-repeat 50% 50%;
       background-size: cover;
       -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   	  filter: grayscale(100%);
@@ -474,7 +474,7 @@ h6 {
 }
 
 .project4 {
-      background: url('Images/photography_hero_opt.jpg') no-repeat 50% 50%;
+      background: url('images/photography_hero_opt.jpg') no-repeat 50% 50%;
       background-size: cover;
       -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   	  filter: grayscale(100%);
