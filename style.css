@@ -26,6 +26,12 @@ h1 {
 	text-transform: uppercase;
 }
 
+h6 {
+	font-family: sans-serif;
+	color: #fff;
+	font-weight: thin;
+}
+
 #style1 {
 	border-top: 1px solid #fff;
 }
@@ -43,6 +49,8 @@ a:link {
 a:hover {
 	color: #ff0080;
 	text-decoration: none;
+	transition: all .3s ease-out;
+
 }
 
 a:active {
@@ -50,13 +58,15 @@ a:active {
 }
 
 p a:link {
-	color: grey;
+	color: white;
 	text-decoration: none;
 }
+
 
 p a:hover {
 	color: #ff0080;
 	text-decoration: underline;
+	transition: all .3s ease-out;
 }
 
 p a:active {
@@ -64,9 +74,7 @@ p a:active {
 	text-decoration: underline;
 }
 
-p a:visited {
-	color: grey;
-}
+
 
 /* Typewriter */
 .line {
@@ -306,11 +314,25 @@ nav #menu li a:hover {
 	line-height: 48px;
 }
 
+@media(max-width: 1080px) {
+	.header h1 {
+		font-size: 30px;
+	}
+}
+
 @media(max-width: 768px) {
+	.header h1 {
+		font-size: 20px;
+	}
+}
+
+@media(max-width: 480px) {
 	.header h1 {
 		font-size: 15px;
 	}
 }
+
+
 
 /* Icon Animation */
 .scroll-down {
@@ -430,7 +452,8 @@ h6 {
 }
 
 .project2::after {
-      content: "Project Flex & Piece of Cake.";
+      content: "Project Flex & \A Piece of Cake.";
+      white-space: pre;
       font-family: "titling-gothic-fb-extended", sans-serif;
       text-transform: uppercase;
       font-weight: 700;
@@ -459,7 +482,8 @@ h6 {
 }
 
 .project3::after {
-      content: "Misc. Design.";
+      content: "Misc. \A Design.";
+      white-space: pre;
       font-family: "titling-gothic-fb-extended", sans-serif;
       text-transform: uppercase;
       font-weight: 700;
@@ -511,10 +535,29 @@ h6 {
       .vertical {
             display: none;
       }
+}
 
-      .project1::after, .project2::after, .project3::after, .project4::after {
-            display: none;
-      }
+
+@media(max-width: 991px) {
+	.project1::after, .project2::after, .project3::after, .project4::after {
+		top: 40%;
+		left: 0%;
+	}
+}
+
+@media(max-width: 768px) {
+	.project1::after, .project2::after, .project3::after, .project4::after {
+		top: 40%;
+		left: 0%;
+		font-size: 30px;
+
+	}
+}
+
+@media(max-width: 480px) {
+	.project1::after, .project2::after, .project3::after, .project4::after {
+		font-size: 20px;
+	}
 }
 
 /* Footer */
@@ -635,6 +678,21 @@ h4 a:hover {
       }
 }
 
+.container a:link {
+	color: #fff;
+	text-decoration: none;
+}
+
+.container a:visited {
+	color: #fff;
+	text-decoration: none;
+}
+
+.container a:hover {
+	color: #ff0080;
+	transition: all .3s ease-out;
+}
+
 .row p {
 	font-weight: 300;
 	line-height: 36px;
@@ -671,6 +729,12 @@ h4 a:hover {
 .next p {
       text-align: right;
       text-decoration: none;
+}
+
+@media(max-width: 575px) {
+	.next {
+		bottom: 52px;
+	}
 }
 
 /* Photo Gallery */
@@ -746,3 +810,4 @@ h4 a:hover {
   	  -webkit-transition: all 0.5s ease-in-out;
   	  transition: all 0.5s ease-in-out;
 }
+
