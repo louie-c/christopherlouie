@@ -47,10 +47,14 @@
 		</script>
 <!-- Fonts -->
 		<link rel="stylesheet" href="https://use.typekit.net/eya6sfs.css">
+<!-- Parallax -->
+		<script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.0.2/dist/simpleParallax.min.js"></script>
 	</head>
 
 	<body>
 <!-- Navigation -->
+		
+
 		<div class="wrapper">
 			<nav>
 				<div id="brand">
@@ -79,7 +83,6 @@
 					<li><a href="#contact">contact.</a></li>
 				</ul>
 			</div>
-
 <!-- Hero -->
 			<div class="hero">
 				<div class="header">
@@ -91,7 +94,7 @@
 
 <!-- Work -->
 			<div class="container-fluid">
-				<br><br><br>
+				<br><br>
 				<!--<h6 class="wow fadeInUp" data-wow-delay=".2s">selected work</h6>-->
 				<div class="container">
 					<div class="row">	
@@ -99,7 +102,7 @@
 
 						<div class="col-lg-5">
 							<h2 class="wow fadeInUp" data-wow-delay=".2s">Hi! I'm Christopher Louie,
-							an Interaction Designer with a passion for creating compelling, user-driven experiences through intuitive, beautiful design. Check back for work updates and new projects! For more information feel free to <a href="#contact"><em>reach out!</em></a></h2>
+							an Interaction Designer with a passion for creating compelling, user-driven experiences through intuitive, beautiful design. Check back for work updates and new projects! For more information feel free to <a href="#contact">reach out!</a></h2>
 						</div>
 
 						<div class="col-lg-3"></div>
@@ -111,23 +114,33 @@
 				<br>
 
 				<div class="whitespace"></div>
+				<div class="whitespace"></div>
 				<a id="work"></a>
 				<div class="whitespace"></div>
+
 
 			<!-- Project 1 -->
 				<div class="row">
 					<div class="col-lg-8"></div>
 
-					<div class="col-lg-4 project project1 wow fadeInUp" data-wow-delay=".4s" onclick="location.href='project1.html'"></div>
+					<div class="col-lg-4 project project1 wow fadeInUp img one" data-wow-delay=".4s" onclick="location.href='project1.html'">
+
+						<img src="images/kaleidosaur_hero_opt.jpg" id="parallax-img" class="ione">
+						
+					</div>
 				</div>
 
 				<div class="whitespace"></div>
 
 			<!-- Project 2 -->
 				<div class="row">
-					<div class="col-lg-8"></div>
+					<div class="col-lg-9"></div>
 
-					<div class="col-lg-6 project project2 wow fadeInUp" data-wow-delay=".4s" onclick="location.href='project2.html'"></div>
+					<div class="col-lg-5 project project2 wow fadeInUp img three" data-wow-delay=".4s" onclick="location.href='project2.html'">
+
+						<img src="images/project2_hero_opt" id="parallax-img" class="itwo">
+					</div>
+
 				</div>
 
 				<div class="whitespace"></div>
@@ -136,9 +149,12 @@
 				<div class="row">
 					<div class="col-lg-7"></div>
 
-					<div class="col-lg-4 project project3 wow fadeInUp" data-wow-delay=".4s" onclick="location.href='project3.html'"></div>
+					<div class="col-lg-5 project project3 wow fadeInUp img three" data-wow-delay=".4s" onclick="location.href='project3.html'">
 
-					<div class="col-lg-1"></div>
+						<img src="images/design_hero_opt.jpg" id="parallax-img" class="ithree">
+					</div>
+
+			
 				</div>
 
 				<div class="whitespace"></div>
@@ -163,7 +179,6 @@
 
 			<div class="footer">
 				<div class="container">
-
 					<div class="hr>">
 						<div class="row"></div>
 					</div>
@@ -195,9 +210,11 @@
 				</div>
 			</div>
 			<a id="contact"></a>
-			<br><br>
+			<br>
 		</div>
-
+		<p style="text-align:center; opacity:.1; font-size: 15px;">Christopher Louie &copy; 2019</p>
+		<br>
+		
 <!-- Greensock CDN Nav Menu --> 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
 
@@ -243,7 +260,7 @@
 			"DESIGN.", 
 			"UI/UX.",
 			"CREATIVE.",
-			"CHRISTOPHER LOUIE."
+			
 			);
 			var iSpeed = 140; // time delay of print out
 			var iIndex = 0; // start printing array at this posision
@@ -278,6 +295,27 @@
 
 
 			typewriter();
-		</script>	
+		</script>
+<!-- Parallax -->
+		<script type="text/javascript">
+      		var image = document.getElementsByClassName('ione');
+      		new simpleParallax(image, {
+        		    scale: 1.1,
+        		    orientation: 'right'
+      		});
+
+      		var image = document.getElementsByClassName('itwo');
+      		new simpleParallax(image, {
+            		scale: 1.3,
+            		
+      		});
+
+      		var image = document.getElementsByClassName('ithree');
+      		new simpleParallax(image, {
+            		scale: 1.1,
+            		orientation: 'left'
+      		});
+		</script>
+	
 	</body>
 </html>
