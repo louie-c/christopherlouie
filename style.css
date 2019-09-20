@@ -33,8 +33,15 @@ h1 {
 	line-height: 44px;
 	letter-spacing: 2px;
 	color: grey;
-
 	
+}
+
+@media(max-width: 1200px) {
+	.row h2 {
+		font-size: 30px;
+		line-height: 39px;
+		letter-spacing: 1px;
+	}
 }
 
 @media(max-width: 768px) {
