@@ -29,28 +29,22 @@ h1 {
 .row h2 {
 	font-family: titling-gothic-fb, sans-serif;
 	font-weight: 300;
-	font-size: 36px;
-	line-height: 44px;
+	font-size: 30px;
+	line-height: 45px;
 	letter-spacing: 2px;
 	color: grey;
+  padding: 24px;
 	
 }
 
 @media(max-width: 1200px) {
 	.row h2 {
-		font-size: 30px;
-		line-height: 39px;
+		font-size: 27px;
+		line-height: 43px;
 		letter-spacing: 1px;
 	}
 }
 
-@media(max-width: 768px) {
-	.row h2 {
-		font-size: 25px;
-		line-height: 34px;
-		letter-spacing: 1px;
-	}
-}
 
 h6 {
 	font-family: sans-serif;
@@ -301,31 +295,31 @@ nav #menu li a:hover {
 }
 
 .hero h1 {
-	font-size: 50px;
+	font-size: 60px;
 	font-weight: 700;
 	text-align: left;
-	line-height: 65px;
+	line-height: 70px;
 	
 }
 
 @media(max-width: 1080px) {
 	.header h1 {
-		font-size: 35px;
-		line-height: 50px;
+		font-size: 50px;
+		line-height: 60px;
 	}
 }
 
 @media(max-width: 768px) {
 	.header h1 {
-		font-size: 23px;
-		line-height: 34px;
+		font-size: 40px;
+		line-height: 50px;
 	}
 }
 
 @media(max-width: 480px) {
 	.header h1 {
-		font-size: 15px;
-		line-height: 20px;
+		font-size: 20px;
+		line-height: 30px;
 	}
 }
 
@@ -389,6 +383,12 @@ h6 {
       height: 500px;
 }
 
+#parallax-img {
+  cursor: pointer;
+  height: 500px;
+  object-fit: cover;
+}
+
 #small-project {
 	height: auto;
 	cursor: pointer;
@@ -441,8 +441,8 @@ h6 {
 }
 
 .project1 {
-      background: url('images/kaleidosaur_hero_opt.jpg') no-repeat 50% 50%;
-      background-size: cover;
+      /*background: url('images/kaleidosaur_hero_opt.jpg') no-repeat 50% 50%;
+      background-size: cover;*/
       -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   	  filter: grayscale(100%);
 }
@@ -460,19 +460,20 @@ h6 {
       font-family: "titling-gothic-fb-extended", sans-serif;
       text-transform: uppercase;
       font-weight: 700;
-      font-size: 36px;
+      font-size: 45px;
+      line-height: 65px;
       position: relative;
       color: #fff;
       display: block;
-      top: 15%;
+      top: -80%;
       left: -60%;
       right: 0;
       bottom: 0;
 }
 
 .project2 {
-      background: url('images/project2_hero_opt') no-repeat 50% 50%;
-      background-size: cover;
+      /*background: url('images/project2_hero_opt') no-repeat 50% 50%;
+      background-size: cover;*/
       -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   	  filter: grayscale(100%);
 }
@@ -490,19 +491,20 @@ h6 {
       font-family: "titling-gothic-fb-extended", sans-serif;
       text-transform: uppercase;
       font-weight: 700;
-      font-size: 36px;
+      font-size: 45px;
+      line-height: 65px;
       position: relative;
       color: #fff;
       display: block;
-      top: 60%;
-      left: 85%;
+      top: -50%;
+      left: 80%;
       right: 0;
       bottom: 0;
 }
 
 .project3 {
-      background: url('images/design_hero_opt.jpg') no-repeat 50% 50%;
-      background-size: cover;
+      /*background: url('') no-repeat 50% 50%;
+      background-size: cover;*/
       -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   	  filter: grayscale(100%);
 }
@@ -520,12 +522,13 @@ h6 {
       font-family: "titling-gothic-fb-extended", sans-serif;
       text-transform: uppercase;
       font-weight: 700;
-      font-size: 36px;
+      font-size: 45px;
+      line-height: 60px;
       position: relative;
       color: #fff;
       display: block;
-      top: 70%;
-      left: -50%;
+      top: -30%;
+      left: -20%;
       right: 0;
       bottom: 0;
 }
@@ -573,16 +576,17 @@ h6 {
 
 @media(max-width: 991px) {
 	.project1::after, .project2::after, .project3::after, .project4::after {
-		top: 40%;
+		top: -40%;
 		left: 0%;
 	}
 }
 
 @media(max-width: 768px) {
 	.project1::after, .project2::after, .project3::after, .project4::after {
-		top: 40%;
+		top: -40%;
 		left: 0%;
 		font-size: 30px;
+    line-height: 40px;
 
 	}
 }
