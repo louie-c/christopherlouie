@@ -14,6 +14,11 @@
 		<meta name="description" content="Interaction Designer with a passion for creating compelling, user-driven, experiences through beautiful design. I bring years of experience and knowledge to the table.">
 
 		<link href="style.css" rel="stylesheet" type="text/css">
+
+		<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+		<link rel="manifest" href="images/site.webmanifest">
 <!-- Jquery CDN -->
 		<script
 			  src="https://code.jquery.com/jquery-3.4.1.js"></script>
@@ -48,15 +53,16 @@
 <!-- Navigation -->
 		<div class="wrapper">
 			<nav>
-				<span id="brand">
+				<div id="brand">
 					<a href="index.html">christopherlouie</a>
-				</span>
-
-				<ul id="menu">
-					<li><a href="index.html">home<span>.</span></a></li>
-					<li><a href="work.html">work<span>.</span></a></li>
-					<li><a href="#contact">contact<span>.</span></a></li>
-				</ul>
+				</div>
+				<div class="container-fluid">
+					<ul id="menu">
+						<li><a href="index.html">home.</a></li>
+						<li><a href="#work">work.</a></li>
+						<li><a href="#contact">contact.</a></li>
+					</ul>
+				</div>
 
 				<div id="toggle">
 					<div class="span">menu</div>
@@ -68,17 +74,17 @@
 				<div class="close-btn">close</div>
 
 				<ul id="menu">
-					<li><a href="index.html">home<span>.</span></a></li>
-					<li><a href="work.html">work<span>.</span></a></li>
-					<li><a href="#contact">contact<span>.</span></a></li>
+					<li><a href="index.html">home.</a></li>
+					<li><a href="#work">work.</a></li>
+					<li><a href="#contact">contact.</a></li>
 				</ul>
 			</div>
 
 <!-- Hero -->
 			<div class="hero">
 				<div class="header">
-					<h1 class="line anim-typewriter">UI/UX. Design. Creative.</h1>
-				</div>
+					<h1 id="typedtext">UI/UX. Design. Creative. Christopher Louie.</h1>
+				</div>	
 			</div>
 
 			<div class="scroll-down"></div>
@@ -86,12 +92,26 @@
 <!-- Work -->
 			<div class="container-fluid">
 				<br><br><br>
-				<!--<h6 class="wow fadeInUp" data-wow-delay=".2s">selected work</h6>--> 
+				<!--<h6 class="wow fadeInUp" data-wow-delay=".2s">selected work</h6>-->
+				<div class="container">
+					<div class="row">	
+						<div class="col-lg-4"></div>
+
+						<div class="col-lg-5">
+							<h2 class="wow fadeInUp" data-wow-delay=".2s">Hi! I'm Christopher Louie,
+							an Interaction Designer with a passion for creating compelling, user-driven experiences through intuitive, beautiful design. Check back for work updates and new projects! For more information feel free to <a href="#contact"><em>reach out!</em></a></h2>
+						</div>
+
+						<div class="col-lg-3"></div>
+					</div>
+				</div>
+				<br><br><br>
 
 				<div class="vertical wow fadeInUp" data-wow-delay=".3s"></div>
 				<br>
 
 				<div class="whitespace"></div>
+				<a id="work"></a>
 				<div class="whitespace"></div>
 
 			<!-- Project 1 -->
@@ -214,6 +234,50 @@
 
 		    new WOW().init();
 
-    	</script>	
+    	</script>
+
+  <!-- Typewriter -->
+		<script>
+			// set up text to print, each item in array is new line
+			var aText = new Array(
+			"DESIGN.", 
+			"UI/UX.",
+			"CREATIVE.",
+			"CHRISTOPHER LOUIE."
+			);
+			var iSpeed = 140; // time delay of print out
+			var iIndex = 0; // start printing array at this posision
+			var iArrLength = aText[0].length; // the length of the text array
+			var iScrollAt = 20; // start scrolling up at this many lines
+			 
+			var iTextPos = 0; // initialise text position
+			var sContents = ''; // initialise contents variable
+			var iRow; // initialise current row
+			 
+			function typewriter()
+			{
+			 sContents =  ' ';
+			 iRow = Math.max(0, iIndex-iScrollAt);
+			 var destination = document.getElementById("typedtext");
+			 
+			 while ( iRow < iIndex ) {
+			  sContents += aText[iRow++] + '<br />';
+			 }
+			 destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + '<span aria-hidden="true"></span>';
+			 if ( iTextPos++ == iArrLength ) {
+			  iTextPos = 0;
+			  iIndex++;
+			  if ( iIndex != aText.length ) {
+			   iArrLength = aText[iIndex].length;
+			   setTimeout("typewriter()", 500);
+			  }
+			 } else {
+			  setTimeout("typewriter()", iSpeed);
+			 }
+			}
+
+
+			typewriter();
+		</script>	
 	</body>
 </html>
