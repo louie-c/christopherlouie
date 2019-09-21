@@ -287,7 +287,7 @@
 			 while ( iRow < iIndex ) {
 			  sContents += aText[iRow++] + '<br />';
 			 }
-			 destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + '<span aria-hidden="true"></span>';
+			 destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + '<span class="blink" aria-hidden="true"></span>';
 			 if ( iTextPos++ == iArrLength ) {
 			  iTextPos = 0;
 			  iIndex++;
