@@ -286,6 +286,13 @@ nav #menu li a:hover {
 	}
 }
 
+@media(max-width: 340px) {
+  nav #menu li {
+    padding-left: 20px;
+  }
+}
+
+
 /* Hero */
 .hero {
 	height: 100vh;
