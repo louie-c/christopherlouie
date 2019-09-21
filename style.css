@@ -45,6 +45,13 @@ h1 {
 	}
 }
 
+@media(max-width: 768px) {
+  .row h2 {
+    font-size: 21px;
+    line-height: 38px;
+  }
+}
+
 
 h6 {
 	font-family: sans-serif;
